@@ -1,6 +1,16 @@
+enum Compass {NORTH, SOUTH, EAST, WEST}
 public class Main
 {
-        public static void isInteger(Number num)
+    static String getDirection(Compass value)
+    {
+        return switch(value) {
+            case NORTH -> "Up";
+            case SOUTH -> "Down";
+            case EAST -> "Right";
+            case WEST -> "Left";
+        };
+    }
+    public static void isInteger(Number num)
         {
             if(num instanceof Integer)
                 System.out.println(num+"is an integer.");
@@ -18,8 +28,11 @@ public class Main
 //        System.out.println(d.intValue());      // 314
 //        System.out.println(d.doubleValue());
 
-        isInteger(5);
-        isInteger(3.14);
+//        isInteger(5);
+//        isInteger(3.14);
+
+        System.out.println(getDirection(Compass.SOUTH));
+
 
     }
 }
