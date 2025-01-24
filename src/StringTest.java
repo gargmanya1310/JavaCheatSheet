@@ -15,6 +15,20 @@ public class StringTest
         name.insert(5, "D. ");
         System.out.println(name);
 
+        // delete()
+        StringBuilder sb1 = new StringBuilder("abcdef");
+        System.out.println(sb1.delete(1, 4));
+
+        // deleteCharAt()
+        StringBuilder sb2 = new StringBuilder("abcdef");
+        System.out.println(sb2.deleteCharAt(2));
+
+        //System.out.println(sb2.deleteCharAt(6));        Gives out of bound exception
+
+
+
+
+
 
 
     }
