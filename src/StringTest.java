@@ -34,6 +34,22 @@ public class StringTest
         sb.reverse();
         System.out.println(sb);
 
+        //equal string
+        StringBuilder sbName1 = new StringBuilder("John Wayne");
+        StringBuilder sbName2 = new StringBuilder("John Wayne");
+        System.out.println(sbName1 == sbName2);
+        System.out.println(sbName1.equals(sbName2));
+        System.out.println(sbName1.toString().equals(sbName2.toString()));  // if we want to compare content we have to convert it back to String:
+
+        // substring() returns a String and doesn't change the StringBuilder
+        StringBuilder name4 = new StringBuilder("John Wayne");
+        name4.substring(2, 6);
+        System.out.println(name4);
+        // So, we should do this:
+        String subName = name4.substring(2, 6);
+        System.out.println(subName);
+
+
 
 
 
