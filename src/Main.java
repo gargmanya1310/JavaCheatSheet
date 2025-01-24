@@ -31,7 +31,12 @@ public class Main
 //        isInteger(5);
 //        isInteger(3.14);
 
-        System.out.println(getDirection(Compass.SOUTH));
+      //  System.out.println(getDirection(Compass.SOUTH));
+
+        StringTest obj=new StringTest();
+        obj.showName();
+
+
 
 
     }
