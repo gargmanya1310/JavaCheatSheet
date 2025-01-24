@@ -22,8 +22,19 @@ public class StringTest
         // deleteCharAt()
         StringBuilder sb2 = new StringBuilder("abcdef");
         System.out.println(sb2.deleteCharAt(2));
-
         //System.out.println(sb2.deleteCharAt(6));        Gives out of bound exception
+
+        // if final index is too large, replace goes through the end (no exception!)
+        StringBuilder name2 = new StringBuilder("John Wayne");
+        name2.replace(5, 100, "Doe");
+        System.out.println(name2);
+
+        // reverse()
+        StringBuilder sb = new StringBuilder("LUKA");
+        sb.reverse();
+        System.out.println(sb);
+
+
 
 
 
