@@ -33,10 +33,11 @@ public class Main
 
       //  System.out.println(getDirection(Compass.SOUTH));
 
-        StringTest obj=new StringTest();
-        obj.showName();
+//        StringTest obj=new StringTest();
+//        obj.showName();
 
-
+        ArrayOps obj2=new ArrayOps();
+        obj2.arrays();
 
 
     }
