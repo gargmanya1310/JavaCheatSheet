@@ -7,4 +7,10 @@ public class MethodsDemo
             sum += i;
         return sum;
     }
+    public void greet (String greeting, String... names)
+    {
+        for (String name : names) {
+            System.out.println(greeting + ", " + name + "!");
+        }
+    }
 }
