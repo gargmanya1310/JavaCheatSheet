@@ -36,8 +36,12 @@ public class Main
 //        StringTest obj=new StringTest();
 //        obj.showName();
 
-        ArrayOps obj2=new ArrayOps();
-        obj2.arrays();
+//        ArrayOps obj2=new ArrayOps();
+//        obj2.arrays();
+
+        MethodsDemo obj3=new MethodsDemo();
+        System.out.println(obj3.add(5,6,3));
+
 
 
     }
