@@ -8,6 +8,11 @@ class Mobile
     {
         System.out.println("Brand: " + brand + ", Price: " + price + ", Name: " + name);
     }
+
+    public static void show1(Mobile obj)
+    {
+        System.out.println(obj.brand +","+ obj.price + "," + name);
+    }
 }
 
 
@@ -28,6 +33,8 @@ public class Main
 
         obj1.show();
         obj2.show();
+
+       // Mobile.show();
 
     }
 }
